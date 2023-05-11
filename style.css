@@ -197,6 +197,10 @@ div.exp__date {
   font-size: 9px;
 }
 
+.months__input {
+  margin-right: 4px
+}
+
 span.cvc__back {
   position: absolute;
   top: 45%;
