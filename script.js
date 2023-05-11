@@ -177,3 +177,27 @@ button.addEventListener("click", function () {
     errorElse(alertCvc, cvcInput);
   }
 });
+
+//dynamic typing
+
+const dynamicTypingName = function () {
+  cardOwner.innerHTML = this.value;
+};
+const dynamicTypingNumber = function () {
+  cardNumber.innerHTML = this.value.match(/.{1,4}/g).join(" ");
+};
+const dynamicTypingYears = function () {
+  cardExpYears.innerHTML = this.value;
+};
+const dynamicTypingMonths = function () {
+  cardExpMonths.innerHTML = this.value;
+};
+const dynamicTypingCVC = function () {
+  cardCVC.innerHTML = this.value;
+};
+
+cardHolderInput.addEventListener("input", dynamicTypingName);
+cardNumberInput.addEventListener("input", dynamicTypingNumber);
+yearsInput.addEventListener("input", dynamicTypingYears);
+monthsInput.addEventListener("input", dynamicTypingMonths);
+cvcInput.addEventListener("input", dynamicTypingCVC);
