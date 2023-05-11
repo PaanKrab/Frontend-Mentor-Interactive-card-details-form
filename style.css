@@ -387,6 +387,7 @@ section.inputs__confirm p {
   }
 
   .attribution {
+    visibility: hidden;
     font-size: 11px;
     text-align: center;
     position: absolute;
