@@ -38,7 +38,7 @@ body {
 div.background {
   position: absolute;
   z-index: -1;
-  background-image: url(/images/bg-main-desktop.png);
+  background-image: url(https://github.com/PaanKrab/Frontend-Mentor-Interactive-card-details-form/blob/main/images/bg-main-desktop.png?raw=true);
   background-size: cover;
   width: 483px;
   height: 100vh;
@@ -85,7 +85,7 @@ div.front__card {
   align-items: center;
   width: 447px;
   height: 245px;
-  background-image: url(/images/bg-card-front.png);
+  background-image: url(https://github.com/PaanKrab/Frontend-Mentor-Interactive-card-details-form/blob/main/images/bg-card-front.png?raw=true);
   border-radius: 10px;
   padding: 20px;
   letter-spacing: 2px;
@@ -96,7 +96,7 @@ div.back__card {
   align-self: flex-end;
   width: 447px;
   height: 245px;
-  background-image: url(/images/bg-card-back.png);
+  background-image: url(https://github.com/PaanKrab/Frontend-Mentor-Interactive-card-details-form/blob/main/images/bg-card-back.png?raw=true);
   border-radius: 10px;
   font-size: 14px;
 }
@@ -223,7 +223,7 @@ div.correct {
   height: 80px;
   margin: 0 auto;
   border-radius: 50%;
-  background-image: url(./images/icon-complete.svg);
+  background-image: url(https://raw.githubusercontent.com/PaanKrab/Frontend-Mentor-Interactive-card-details-form/6a2fb2ff2e7465e733fb3bc0b94576e208a1ff91/images/icon-complete.svg);
   background-size: cover;
   margin-bottom: 30px;
 }
