@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="wrap">
+      <!-- CARDS -->
+      <section class="cards">
+        <div class="front__card">
+          <div class="circles">
+            <div class="circle__big"></div>
+            <div class="circle__small"></div>
+          </div>
+          <span class="number">0000 0000 0000 0000</span>
+          <div class="owner__exp">
+            <span class="owner">Jane Appleseed </span>
+            <div class="exp__date">
+              <span class="exp__months">00</span>/<span class="exp__years"
+                >00</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="back__card">
+          <span class="cvc__back">000</span>
+        </div>
+      </section>
+
+      <!-- INPUTS -->
+      <section class="inputs__confirm">
+        <div class="card__holder">
+          <h1>Cardholder Name</h1>
+          <input
+            type="text"
+            class="cardholder__input"
+            placeholder="e.g. Jane Appleseed"
+          />
+          <p class="alert__name alert">Wrong format, only letters.</p>
+        </div>
+        <div class="card__number">
+          <h2>Card Number</h2>
+          <input
+            maxlength="16"
+            type="text"
+            class="cardnumber__input"
+            placeholder="e.g. 1234567891230000"
+          />
+          <p class="alert__number alert">Wrong format, only numbers.</p>
+        </div>
+        <div class="exp__date__cvc">
+          <div class="exp">
+            <h3>exp. date(mm/yy)</h3>
+            <div class="months__inputAlert">
+              <input
+                maxlength="2"
+                type="text"
+                class="months__input"
+                placeholder="MM"
+              />
+              <p class="alert__months alert">Can't be blank</p>
+            </div>
+            <div class="years__inputAlert">
+              <input
+                maxlength="2"
+                type="text"
+                class="years__input"
+                placeholder="YY"
+              />
+              <p class="alert__years alert">Can't be blank</p>
+            </div>
+          </div>
+          <div class="cvc">
+            <h3>CVC</h3>
+            <div class="cvc__inputAlert">
+              <input
+                maxlength="3"
+                type="text"
+                class="cvc__input"
+                placeholder="e.g. 123"
+              />
+              <p class="alert__cvc alert">Only numbers</p>
+            </div>
+          </div>
+        </div>
+        <button class="button">Confirm</button>
+      </section>
+      <section class="success">
+        <div class="correct"></div>
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+      </section>
+    </div>
+
+    <!-- Completed state start -->
+
+    <!-- Thank you! We've added your card details Continue -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">PaanKrab</a>.
+      </div>
+    </footer>
+  </body>
+</html>

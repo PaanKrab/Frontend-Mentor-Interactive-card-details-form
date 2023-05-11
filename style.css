@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+/* font-family: 'Space Grotesk', sans-serif; */
+/* font-weight: 500 */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrap {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div.background {
+  position: absolute;
+  z-index: -1;
+  background-image: url(/images/bg-main-desktop.png);
+  background-size: cover;
+  width: 483px;
+  height: 100vh;
+}
+
+section.cards {
+  display: flex;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 541px;
+  height: 527px;
+  color: white;
+  background-color: transparent;
+}
+
+section.inputs__confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateY(-50%);
+  width: 381px;
+  height: 352px;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+div.front__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 447px;
+  height: 245px;
+  background-image: url(/images/bg-card-front.png);
+  border-radius: 10px;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+div.back__card {
+  position: relative;
+  align-self: flex-end;
+  width: 447px;
+  height: 245px;
+  background-image: url(/images/bg-card-back.png);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.cardnumber__input,
+.cardholder__input {
+  width: 381px;
+  height: 45px;
+}
+
+input {
+  border: 1px solid rgba(223, 222, 224, 1);
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 0 0 0 10px;
+}
+
+input:focus {
+  border-color: rgba(99, 72, 254, 1);
+  outline: none;
+}
+
+div.exp input {
+  width: 80px;
+  height: 45px;
+}
+
+div.cvc input {
+  width: 191px;
+  height: 45px;
+}
+
+div.exp__date__cvc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  align-self: center;
+  width: 381px;
+  height: 53px;
+  line-height: 53px;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(33, 9, 47, 1);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+div.circles {
+  display: flex;
+  align-items: center;
+  align-self: self-start;
+  width: 84px;
+  height: 47px;
+  margin-bottom: 70px;
+}
+
+div.circle__big {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #fff;
+}
+
+div.circle__small {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+span.number {
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+div.owner__exp {
+  display: flex;
+  justify-content: space-between;
+  width: 383px;
+  height: 18px;
+}
+
+span.owner {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+div.exp__date {
+  display: block;
+  font-size: 14px;
+  font-size: 9px;
+}
+
+span.cvc__back {
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  letter-spacing: 2px;
+}
+
+/* success */
+section.success {
+  visibility: hidden;
+  position: absolute;
+  top: 155%;
+  left: 55%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 381px;
+  height: 291px;
+  text-align: center;
+  transition: 2s;
+}
+
+div.correct {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(./images/icon-complete.svg);
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+section.success h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+section.success p {
+  display: block;
+  font-size: 18px;
+  color: rgba(143, 134, 148, 1);
+}
+
+section.inputs__confirm p {
+  display: inline;
+  font-size: 10px;
+  color: red;
+}
+
+.years__inputAlert,
+.months__inputAlert,
+.cvc__inputAlert {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+.years__inputAlert {
+  margin-right: 10px;
+}
+
+.alert__name,
+.alert__number,
+.alert__months,
+.alert__years,
+.alert__cvc {
+  visibility: hidden;
+}
+
+/* media */
+@media (max-width: 1440px) {
+  div.background {
+    width: 100%;
+    height: 240px;
+  }
+
+  section.cards {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: 343px;
+    height: 251px;
+  }
+
+  section.inputs__confirm {
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 327px;
+    height: 328px;
+    transition: none;
+  }
+
+  div.front__card {
+    position: absolute;
+    width: 286px;
+    height: 157px;
+    padding: 20px;
+    margin-top: 89px;
+  }
+
+  div.back__card {
+    position: absolute;
+    z-index: -2;
+    width: 286px;
+    height: 157px;
+    background-size: cover;
+    font-size: 9px;
+  }
+
+  .cardnumber__input,
+  .cardholder__input {
+    width: 327px;
+  }
+
+  div.exp input {
+    width: 72px;
+  }
+
+  div.cvc input {
+    width: 164px;
+  }
+
+  div.exp__date__cvc {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    width: 327px;
+  }
+
+  div.circles {
+    width: 54px;
+    height: 30px;
+    margin-bottom: 40px;
+  }
+
+  div.circle__big {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  div.circle__small {
+    width: 13.5px;
+    height: 13.5px;
+  }
+
+  span.number {
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+
+  div.owner__exp {
+    width: 245px;
+    height: 12px;
+  }
+
+  span.owner {
+    font-size: 9px;
+  }
+
+  span.cvc__back {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    letter-spacing: 2px;
+  }
+  .attribution {
+    font-size: 9px;
+  }
+  /* success */
+  section.success {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 30px;
+    top: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 327px;
+    height: 291px;
+    transition: none;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
